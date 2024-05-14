@@ -254,10 +254,22 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* transition: transform .5s ease; */
+    transition-property: transform, box-shadow, background-size;
+    transition-duration: .5s;
 }
+    .modelo:hover{
+        /* transform: scale(1.1); */
+        transform: scale(1.1);
+        box-shadow: -0.5rem .5rem 1rem rgba(16, 115, 186, 0.5);
+        background-size: 20rem;
+    }
 @media (min-width: 992px){ 
     .modelo{
         margin-bottom: 0;
+    }
+    .modelo:hover{
+        background-size: 30rem;
     }
 }
 .modelo h3{
